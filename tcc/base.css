@@ -1,0 +1,536 @@
+/* ======================================================= */
+/* MEDIA QUERY: Aplica-se a ecrãs com largura de 768px ou menos */
+/* ======================================================= */
+@media screen and (max-width: 768px) {
+    
+  /* 1. Empilhar Colunas */
+  /* Se você tem elementos lado a lado (ex: um grid de 3 colunas, ou sidebar), faça com que ocupem a largura total */
+  .coluna, .produto-card, .sidebar {
+      width: 100%; /* Ocupa a largura inteira */
+      float: none; /* Desliga o alinhamento que pode ter sido usado para colocar lado a lado */
+      margin-bottom: 20px;
+  }
+  
+  /* 2. Menu de Navegação */
+  /* Se o menu for horizontal, faça-o vertical para ser mais fácil de clicar */
+  .nav-menu ul {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  /* 3. Ajuste de Fontes */
+  h1 {
+      font-size: 1.6em; /* Reduz o tamanho de títulos muito grandes */
+  }
+}
+/* 1. Unidade de caixa flexível */
+* {
+  box-sizing: border-box; 
+}
+
+/* 2. Regra fundamental para imagens */
+img {
+  max-width: 100%; /* Garante que imagens nunca ultrapassem a largura do contentor */
+  height: auto;    /* Mantém a proporção da imagem */
+  display: block;
+}
+
+/* 3. Use unidades de largura flexíveis em % para contentores */
+.container-principal {
+  width: 90%; /* Exemplo: contentor ocupa 90% da largura do ecrã */
+  margin: auto;
+}
+/* Base de Estilos para o Modo Claro (Padrão) */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4; /* Fundo principal no modo claro */
+  color: #333; /* Cor do texto padrão */
+}
+
+/* Links */
+.meu-link {
+  color: #2d572c;
+  text-decoration: underline;
+}
+
+.meu-link:hover {
+  color: #f4c430;
+}
+
+/* Barra verde superior */
+.navbar {
+  background-color: #0b4d36;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+}
+
+.logo img {
+  height: 42px;
+}
+
+.espaco {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icons img {
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Barra branca inferior */
+.nav-linksespecifico {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #fff;
+  height: 35px;
+}
+
+.nav-linksespecifico a {
+  color: #0b4d36;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-linksespecifico a:hover {
+  background-color: #f4f4f4;
+  color: #0b4d36;
+}
+
+/* Link ativo */
+.nav-linksespecifico .teste {
+  background-color: #7ca982;
+  color: #fff !important;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* footer */
+footer {
+  background-color: #0a5330;
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 200px;
+}
+.logo2{
+  height: 90px;
+  width: auto;
+}
+.footer-logo h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.footer-logo .green {
+  color: #f4c430;
+}
+
+.footer-logo .reifen {
+  color: white;
+}
+
+.footer-logo p {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer-links {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* espaço entre os ícones */
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 22px;
+  height: 22px; /* força todos ficarem quadrados */
+  object-fit: contain; /* mantém proporção */
+  display: block;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1); /* efeito leve ao passar o mouse */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid white;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+}
+
+/* Estilos para o botão de alternância de tema */
+.dark-mode-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.dark-mode-toggle-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.dark-mode-toggle-btn:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* ======================================= */
+/* ESTILOS ESPECÍFICOS PARA O MODO ESCURO */
+/* ======================================= */
+
+/* Corrigindo a cor principal e o fundo */
+body.dark-mode {
+  background-color: #121212; /* Fundo principal preto/muito escuro */
+
+}
+
+/* Estilos para o Card de Sustentabilidade (Soluções Sustentáveis) - NOVO */
+body.dark-mode .sustentabilidade-card {
+  background-color: #1e1e1e; /* Fundo escuro para o card, contrastando com o fundo do body */
+  border: 1px solid #333; /* Borda sutil */
+}
+body.dark-mode .sustentabilidade{
+  background-color: #333;
+}
+body.dark-mode .section-container{
+  background-color: #333;
+}
+body.dark-mode .arrumar{
+  background-color: #333;
+}
+/* CORRIGIDO: Hover para os nav-links no dark-mode */
+body.dark-mode .nav-linksespecifico a:hover {
+  background-color: #2a2a2a; /* Cinza escuro para hover */
+  color: #f0f0f0; /* Cor do texto clara */
+}
+
+/* Barra branca inferior (Nav Links) */
+body.dark-mode .nav-linksespecifico {
+  background-color: #1e1e1e; /* Fundo escuro para a barra */
+}
+
+body.dark-mode .nav-linksespecifico a {
+  color: #f0f0f0; /* Links claros */
+}
+
+/* Link ativo (HOME) */
+body.dark-mode .nav-linksespecifico .teste {
+  background-color: #ffffff; /* Destaque branco */
+  color: #095D40 !important; /* Texto verde escuro */
+}
+
+/* Garante que o texto em todo o corpo da página seja claro */
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li {
+  color: #f0f0f0; 
+}
+/* Fundo escuro */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+/* Pop-up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  width: 600px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Centralizar título */
+.popup h2 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.popup .subtitulo {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Ícones e títulos verdes, textos pretos */
+.popup .coluna h3,
+.popup .info h3 {
+  color: #095D40;
+}
+
+.popup .coluna p,
+.popup .info p {
+  color: #000;
+}
+
+/* Layout Atendimento | Horários */
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.coluna {
+  flex: 1;
+}
+
+/* Layout Local + Contato + Logo */
+.info-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ✅ Centraliza verticalmente a logo */
+}
+
+.info {
+  flex: 2;
+}
+
+.popup-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* ✅ centraliza a logo no eixo vertical */
+}
+
+.popup-right img {
+  max-width: 400px; /* deixa a logo um pouco maior */
+  height: auto;
+}
+
+.popup-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.popup-right img {
+  max-width: 120px;
+  height: auto;
+}
+
+/* ✅ Novo layout com imagem à direita */
+.popup-content {
+  display: flex;
+  flex-direction: column; /* empilha texto e logo */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.popup-left {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.coluna {
+  flex: 1;
+  color: #095D40;
+}
+
+.info {
+  color: #095D40;
+}
+
+.popup-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* joga a logo para direita */
+}
+
+.popup-right img {
+  max-width: 250px;
+  height: auto;
+  margin-top: 25px;
+}
+/* POP-UP NO MODO ESCURO (NOVO)   */
+body.dark-mode .popup {
+  background-color: #1c1c1c;        /* Fundo escuro do pop-up */
+  color: #f5f5f5;                   /* Texto claro */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  border: 1px solid #333;           /* Borda sutil para destacar */
+}
+
+body.dark-mode .popup h2 {
+  color: #62cf9b;                   /* Verde destaque no título */
+}
+
+body.dark-mode .popup .subtitulo {
+  color: #a0a0a0;
+}
+
+body.dark-mode .popup .coluna h3,
+body.dark-mode .popup .info h3 {
+  color: #62cf9b;                   /* Verde da marca para subtítulos */
+}
+
+body.dark-mode .popup .coluna p,
+body.dark-mode .popup .info p {
+  color: #d0d0d0;                   /* Texto cinza-claro */
+}
+
+body.dark-mode .popup-right img {
+  filter: brightness(0.9);          /* Logo levemente escurecida */
+}
+
+body.dark-mode .close {
+  color: #f5f5f5;
+}
+
+body.dark-mode .popup a {
+  color: #62cf9b;
+}
+/*modo escuro sobre*/
+/* 🌙 MODO ESCURO */
+body.dark-mode .objetivo-section {
+  background-color: #121212;
+}
+
+body.dark-mode .objetivo-conteudo h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .objetivo-conteudo p {
+  color: #bbbbbb;
+}
+
+body.dark-mode .objetivo-img img:hover {
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.1);
+}
+/* MODO ESCURO */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+body.dark-mode .titulo-eficiencia{
+  background-color: #333
+}

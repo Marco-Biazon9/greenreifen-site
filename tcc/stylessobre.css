@@ -1,0 +1,312 @@
+@media (max-width: 768px) {
+    .objetivo-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .objetivo-conteudo {
+      padding: 0 20px;
+    }
+  }
+  
+/* Estilo para a seção "Nosso Objetivo" */
+.objetivo-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  
+  .objetivo-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 60px;
+    flex-wrap: wrap; /* Responsivo */
+    justify-content: center;
+  }
+  
+  .objetivo-img img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .objetivo-img img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .objetivo-conteudo {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .objetivo-conteudo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #111;
+  }
+  
+  .objetivo-conteudo p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    text-align: justify;
+  }
+  
+/*SOBRE 1*/
+   .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  gap: 15px; /* diminui o espaço entre imagem e texto */
+}
+
+.image img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    /* Adicionado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.content {
+  max-width: 800px;  /* Ajustando o tamanho do conteúdo */
+  color: #333;
+  margin: 0 auto;    /* Centraliza a área do conteúdo */
+  padding: 20px;     /* Adicionando um pouco de espaçamento */
+  text-align: center; /* Centraliza o título e o texto */
+}
+
+.content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 16px;
+  max-width: 600px;  /* Limita a largura do parágrafo */
+  margin-left: auto; /* Alinha o parágrafo à esquerda dentro da largura */
+  margin-right: auto; /* Alinha o parágrafo à direita dentro da largura */
+  text-align: justify; /* Alinha o texto de forma justificada */
+}
+
+/*SUSTENTABILADADE*/
+.sustentabilidade {
+    background-color: #20202011;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sustentabilidade-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #222;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+.sustentabilidade-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* para ficar responsivo */
+}
+
+.sustentabilidade-image img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    /* Adicionado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sustentabilidade-image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.sustentabilidade-card {
+    background-color: #fff;
+    padding: 30px 40px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.sustentabilidade-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.sustentabilidade-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.sustentabilidade-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.sustentabilidade-card button {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Adicionado */
+    transition: all 0.3s ease;
+}
+
+.sustentabilidade-card button:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+}
+/*NOSSA JORNADA*/
+.jornada-pilares {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.nossa-jornada {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza melhor */
+  gap: 30px; /* controla o espaço entre texto e imagem */
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.jornada-imagem img {
+  max-width: 350px; /* controla o tamanho */
+  border-radius: 12px; /* bordas arredondadas */
+  object-fit: cover;
+  /* Adicionado */
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  display: flex;
+}
+.jornada-imagem img:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+.jornada-texto {
+    flex: 1 1 500px;
+    max-width: 600px;
+    z-index: 2; /* garantir que texto fique acima */
+}
+
+.jornada-texto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.jornada-texto p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Estrutura geral das seções (mantém alinhamento entre blocos) */
+.section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* 🔹 reduzido para aproximar imagem e texto */
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px; /* 🔹 levemente menor para melhor centralização */
+  padding: 0 10px; /* 🔹 reduzido espaço lateral */
+  margin: 0 auto; /* centraliza toda a seção */
+}
+
+.arrumar {
+  background-color: #fff;
+}
+
+/* Efeito de hover na imagem */
+.section-container img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos */
+.section-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111;
+  margin-left: 80px; /* 🔹 antes era 250px — agora centraliza melhor */
+}
+
+/* Lista */
+.section-container ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 80px; /* 🔹 alinhado com o título */
+}
+
+.section-container li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Bolinhas coloridas */
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 2px solid;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.circle:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.circle.green { border-color: #095D40; }
+.circle.lightgreen { border-color: #72A270; }
+.circle.softgreen { border-color: #ABC5AA; }
+.circle.yellow { border-color: #FFDE59; }
+.circle.black { border-color: #000; }

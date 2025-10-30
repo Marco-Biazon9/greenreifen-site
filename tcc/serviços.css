@@ -1,0 +1,199 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    gap: 60px;
+}
+.image img {
+    max-width:650px;
+    width: 100%;
+    height: auto;
+   
+}
+a {
+  text-decoration: none; /* tira o sublinhado normal */
+  color: inherit; /* opcional: mantém a cor do texto do elemento pai */
+}
+.content {
+  max-width: 800px;  /* Ajustando o tamanho do conteúdo */
+  color: #333;
+  margin: 0 auto;    /* Centraliza a área do conteúdo */
+  padding: 20px;     /* Adicionando um pouco de espaçamento */
+  text-align: center; /* Centraliza o título e o texto */
+}
+
+.content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 16px;
+  max-width: 600px;  /* Limita a largura do parágrafo */
+  margin-left: auto; /* Alinha o parágrafo à esquerda dentro da largura */
+  margin-right: auto; /* Alinha o parágrafo à direita dentro da largura */
+  text-align: justify; /* Alinha o texto de forma justificada */
+}
+/* seção */
+.eficiencia {
+  text-align: center;
+  margin: 70px 0;
+  font-family: Arial, sans-serif;
+}
+
+.titulo-eficiencia {
+  background: #e4e3e3;
+  padding: 30px 20px;
+}
+
+.titulo-eficiencia h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.titulo-eficiencia p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 🔧 Garante que paddings e larguras funcionem corretamente */
+* {
+  box-sizing: border-box;
+}
+
+/* 🔳 Centraliza todo o conteúdo do processo sem afetar o footer */
+.container-processo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem-centralizada {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* opcional, para afastar do texto */
+}
+
+.imagem-centralizada img {
+  max-width: 35%;
+  height: auto;
+  border-radius: 8px; /* caso queira manter esse estilo */
+}
+.container-processo > * {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* 🧱 Layout do conteúdo principal */
+.processo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+
+.imagem-processo {
+  float: left;
+  margin: 20px 0;
+  max-width: 650px;
+}
+
+.texto {
+  flex: 2; /* ocupa mais espaço para o texto */
+}
+
+.etapa {
+  margin-bottom: 25px;
+}
+
+
+.etapa-texto {
+  flex: 2;
+   text-align: justify;
+}
+
+.produto-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem; /* Aumentado de 2rem para 3rem */
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.imagem-produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.texto-produto {
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+}
+
+.texto-produto h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.texto-produto h3 {
+  font-size: 18px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.texto-produto ul {
+  padding-left: 1.2rem;
+}
+
+.texto-produto li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+h3[id] {
+  scroll-margin-top: 100px; /* ajuste esse valor para o espaço desejado */
+}
+/* Hover nos ícones do cabeçalho */
+.icons img.hover-icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover nos botões */
+button:hover {
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover nas imagens do processo */
+.imagem-processo:hover,
+.imagem-produto img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+/* Hover na primeira imagem da seção serviços */
+.image img:hover,
+.imagem-centralizada img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+}
+

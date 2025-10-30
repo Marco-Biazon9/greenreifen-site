@@ -1,0 +1,104 @@
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 46px;
+  color: #0b6b4b;
+  letter-spacing: 1px;
+  margin-bottom: 36px;
+  font-weight: 700; /* deixa mais marcante */
+}
+
+
+/* DUAS colunas */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 460px; /* esquerda texto, direita formulário */
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* Textos */
+.eyebrow {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.text {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+/* Contatos */
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 28px;
+}
+.icon-top {
+  width: 32px;
+  margin-bottom: 10px;
+}
+.label {
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 4px;
+}
+.contact-link {
+  font-size: 15px;
+  color: #72A270; /* verde */
+  text-decoration: none;
+}
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Formulário */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.contact-form textarea {
+  min-height: 120px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 8px;
+  color: #555;
+}
+.contact-form button {
+  background-color: #054d2d; /* verde escuro */
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  /* FORÇANDO o tamanho correto */
+  width: fit-content !important;
+  min-width: 0 !important;
+  display: inline-block !important;
+}
+
+.contact-form button:hover {
+  background-color: #033a22;
+}
